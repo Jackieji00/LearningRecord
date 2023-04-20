@@ -4,7 +4,6 @@ class Solution {
         int length_t=t.length();
         int result=0;
         int substring_start=-1;//记录s上的位置
-        int substring_end=-1;
         char[] s_chars = s.toCharArray();
         char[] t_chars = t.toCharArray();
         int index_s = 0;
@@ -28,12 +27,10 @@ class Solution {
               if(substring_start<0){
                 substring_start=index_s;
                 record_t=index_t;
-                substring_end=index_s;
 
               }
             }
           }else{
-            substring_end++;
             index_s++;
             index_t++;
           }
